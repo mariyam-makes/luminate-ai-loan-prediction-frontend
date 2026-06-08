@@ -57,8 +57,3 @@ The dashboard communicates with a machine learning backend powered by a **K-Near
 - Cross Validation Accuracy: 80.04%
 - Test Accuracy: 78.86%
 
-
-
-**Mariyam Shaikh**
-
-Frontend Dashboard for the Luminate Loan Prediction Platform
