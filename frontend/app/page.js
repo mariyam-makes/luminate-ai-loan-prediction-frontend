@@ -147,10 +147,10 @@ export default function UnderwritingWorkspace() {
     setMounted(true);
     const checkLocalBackend = async () => {
       try {
-        const res = await fetch('http://localhost:8000/');
+        const res = await fetch('https://luminate-ai-loan-prediction-backend.vercel.app/');
         if (res.ok) {
-          setApiBase('http://localhost:8000');
-          console.log("Local FastAPI backend active at http://localhost:8000");
+          setApiBase('https://luminate-ai-loan-prediction-backend.vercel.app/');
+          console.log("https://luminate-ai-loan-prediction-backend.vercel.app/");
         }
       } catch (e) {
         // Fallback remains on vercel base
@@ -311,7 +311,7 @@ export default function UnderwritingWorkspace() {
       a.click();
       a.remove();
     } catch (e) {
-      alert("PDF downloader offline. Please run the local FastAPI service on port 8000 to compile PDF sheets.");
+      alert("PDF download failed. please try again later or contact support");
     }
   };
 
